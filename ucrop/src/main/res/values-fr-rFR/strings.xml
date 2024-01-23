@@ -5,4 +5,7 @@
     <string name="ucrop_menu_crop">Recadrer</string>
     <string name="ucrop_gif_tag">Bouge fig</string>
     <string name="ucrop_not_crop">Type de coupe non pris en charge</string>
+    <string name="ucrop_label_cancel_photo">Cancel</string>
+    <string name="ucrop_label_next_photo">Next</string>
+
 </resources>

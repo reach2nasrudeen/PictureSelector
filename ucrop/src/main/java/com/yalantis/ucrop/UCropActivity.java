@@ -3,18 +3,12 @@ package com.yalantis.ucrop;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.ColorFilter;
 import android.graphics.PorterDuff;
-import android.graphics.drawable.Animatable;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -34,11 +28,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
-import androidx.core.graphics.BlendModeColorFilterCompat;
-import androidx.core.graphics.BlendModeCompat;
 import androidx.transition.AutoTransition;
 import androidx.transition.Transition;
 import androidx.transition.TransitionManager;
@@ -149,7 +140,7 @@ public class UCropActivity extends AppCompatActivity {
         ImmersiveManager.immersiveAboveAPI23(this, mStatusBarColor, mStatusBarColor, isDarkStatusBarBlack);
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(final Menu menu) {
         getMenuInflater().inflate(R.menu.ucrop_menu_activity, menu);
 
@@ -179,9 +170,9 @@ public class UCropActivity extends AppCompatActivity {
         }
 
         return true;
-    }
+    }*/
 
-    @Override
+   /* @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         menu.findItem(R.id.menu_crop).setVisible(!mShowLoader);
         menu.findItem(R.id.menu_loader).setVisible(mShowLoader);
@@ -198,7 +189,7 @@ public class UCropActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @Override
     protected void onStop() {
@@ -375,11 +366,36 @@ public class UCropActivity extends AppCompatActivity {
         toolbarTitle.setText(mToolbarTitle);
         toolbarTitle.setTextSize(mToolbarTitleSize);
 
+        final TextView toolbarNext = toolbar.findViewById(R.id.toolbar_next);
+        final TextView toolbarCancel = toolbar.findViewById(R.id.toolbar_cancel);
+
+
+        toolbarNext.setTextColor(mToolbarWidgetColor);
+        toolbarNext.setTextSize(mToolbarTitleSize);
+
+
+        toolbarCancel.setTextColor(mToolbarWidgetColor);
+        toolbarCancel.setTextSize(mToolbarTitleSize);
+
+        toolbarNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                cropAndSaveImage();
+            }
+        });
+
+        toolbarCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
         // Color buttons inside the Toolbar
-        Drawable stateButtonDrawable = AppCompatResources.getDrawable(this, mToolbarCancelDrawable).mutate();
+        /*Drawable stateButtonDrawable = AppCompatResources.getDrawable(this, mToolbarCancelDrawable).mutate();
         ColorFilter colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(mToolbarWidgetColor, BlendModeCompat.SRC_ATOP);
         stateButtonDrawable.setColorFilter(colorFilter);
-        toolbar.setNavigationIcon(stateButtonDrawable);
+        toolbar.setNavigationIcon(stateButtonDrawable);*/
         setSupportActionBar(toolbar);
         final ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

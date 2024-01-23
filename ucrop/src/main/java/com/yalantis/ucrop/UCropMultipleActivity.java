@@ -319,11 +319,38 @@ public class UCropMultipleActivity extends AppCompatActivity implements UCropFra
         toolbarTitle.setText(mToolbarTitle);
         toolbarTitle.setTextSize(mToolbarTitleSize);
 
+        final TextView toolbarNext = toolbar.findViewById(R.id.toolbar_next);
+        final TextView toolbarCancel = toolbar.findViewById(R.id.toolbar_cancel);
+
+
+        toolbarNext.setTextColor(mToolbarWidgetColor);
+        toolbarNext.setTextSize(mToolbarTitleSize);
+
+
+        toolbarCancel.setTextColor(mToolbarWidgetColor);
+        toolbarCancel.setTextSize(mToolbarTitleSize);
+
+        toolbarNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (uCropCurrentFragment != null && uCropCurrentFragment.isAdded()) {
+                    uCropCurrentFragment.cropAndSaveImage();
+                }
+            }
+        });
+
+        toolbarCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
         // Color buttons inside the Toolbar
-        Drawable stateButtonDrawable = AppCompatResources.getDrawable(this, mToolbarCancelDrawable).mutate();
+        /*Drawable stateButtonDrawable = AppCompatResources.getDrawable(this, mToolbarCancelDrawable).mutate();
         ColorFilter colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(mToolbarWidgetColor, BlendModeCompat.SRC_ATOP);
         stateButtonDrawable.setColorFilter(colorFilter);
-        toolbar.setNavigationIcon(stateButtonDrawable);
+        toolbar.setNavigationIcon(stateButtonDrawable);*/
         setSupportActionBar(toolbar);
         final ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -447,7 +474,7 @@ public class UCropMultipleActivity extends AppCompatActivity implements UCropFra
         super.onDestroy();
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(final Menu menu) {
         getMenuInflater().inflate(R.menu.ucrop_menu_activity, menu);
 
@@ -477,9 +504,9 @@ public class UCropMultipleActivity extends AppCompatActivity implements UCropFra
         }
 
         return true;
-    }
+    }*/
 
-    @Override
+    /*@Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         menu.findItem(R.id.menu_crop).setVisible(!mShowLoader);
         menu.findItem(R.id.menu_loader).setVisible(mShowLoader);
@@ -497,5 +524,5 @@ public class UCropMultipleActivity extends AppCompatActivity implements UCropFra
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }

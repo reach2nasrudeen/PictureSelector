@@ -70,7 +70,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="主题默认样式"
+                        android:text="Default Style"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -78,7 +78,7 @@
                         android:id="@+id/rb_white_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="主题样式一"
+                        android:text="White Style"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -86,7 +86,7 @@
                         android:id="@+id/rb_num_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="主题样式二"
+                        android:text="Numb Style"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -94,7 +94,7 @@
                         android:id="@+id/rb_we_chat_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="主题样式三 (仿微信-全新风格)"
+                        android:text="We Chat Style"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -106,7 +106,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="注入自定义布局"
+                    android:text="Layout Inject"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -121,7 +121,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="默认启动动画"
+                        android:text="Default Animation"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -129,7 +129,7 @@
                         android:id="@+id/rb_photo_up_animation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="相册上弹动画"
+                        android:text="Photo Up Animation"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
                 </RadioGroup>
@@ -139,7 +139,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="自定义选中动画"
+                    android:text="Selected Animation"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -157,7 +157,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="是否开启点击声音"
+                    android:text="Voice"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -166,7 +166,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="是否开启原图功能"
+                    android:text="Original"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -186,7 +186,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:text="是否开启图片编辑"
+                    android:text="Editor"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -195,7 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="使用自定义相机"
+                    android:text="Custom Camera"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -204,7 +204,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="支持手指缩放相机"
+                    android:text="Zoom"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp"
                     android:visibility="gone" />
@@ -214,7 +214,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="支持手指点击对焦"
+                    android:text="Focus"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp"
                     android:visibility="gone" />
@@ -224,7 +224,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="使用自定义路径"
+                    android:text="Custom Sandbox"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -233,7 +233,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="查询指定目录"
+                    android:text="Only Dir"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -243,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:text="显示资源时间轴"
+                    android:text="Time Axis"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -252,7 +252,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="添加权限说明"
+                    android:text="Permission Desc"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -261,7 +261,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="添加水印"
+                    android:text="Watermark"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -270,7 +270,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="视频缩略图"
+                    android:text="Video Thumbnail"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -279,7 +279,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="视频暂停与继续"
+                    android:text="Resume"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -318,7 +318,7 @@
                         android:id="@+id/rb_system_player"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="系统"
+                        android:text="System Player"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
                 </RadioGroup>
@@ -374,7 +374,7 @@
                         android:id="@+id/rb_us"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="英语"
+                        android:text="US"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -462,7 +462,7 @@
                         android:id="@+id/rb_system"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="系统语言"
+                        android:text="System"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -481,7 +481,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="全部"
+                        android:text="All"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -489,7 +489,7 @@
                         android:id="@+id/rb_image"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="图片"
+                        android:text="Image"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -497,7 +497,7 @@
                         android:id="@+id/rb_video"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="视频"
+                        android:text="Video"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -505,7 +505,7 @@
                         android:id="@+id/rb_audio"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="音频"
+                        android:text="Audio"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
                 </RadioGroup>
@@ -581,7 +581,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="分页模式"
+                    android:text="Page"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -707,7 +707,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="自定义预览"
+                    android:text="Custom Preview"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -717,7 +717,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:text="是否预览图片"
+                    android:text="Preview Image"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -737,7 +737,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:text="预览缩放效果"
+                    android:text="Preview Scale"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -747,7 +747,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:text="是否预览视频"
+                    android:text="Preview Video"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -757,7 +757,7 @@
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:gravity="center_vertical"
-                    android:text="预览视频自动播放"
+                    android:text="Preview Auto"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -767,7 +767,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:text="是否预览音频"
+                    android:text="Preview AUdio"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp"
                     android:visibility="gone" />
@@ -777,7 +777,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="是否压缩图片"
+                    android:text="Compress"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -786,7 +786,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="是否裁剪图片"
+                    android:text="Crop"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp" />
 
@@ -803,7 +803,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="默认"
+                        android:text="Crop Default"
                         android:textColor="@color/app_color_53575e"
                         android:textSize="14sp" />
 
@@ -850,7 +850,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="圆形头像裁剪模式"
+                    android:text="Crop Circluar"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp"
                     android:visibility="gone" />
@@ -862,7 +862,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:text="是否显示裁剪框网格"
+                    android:text="Crop Show Grid"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp"
                     android:visibility="gone" />
@@ -873,7 +873,7 @@
                     android:layout_height="wrap_content"
                     android:checked="true"
                     android:gravity="center_vertical"
-                    android:text="是否显示裁剪边框"
+                    android:text="Crop Frame"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp"
                     android:visibility="gone" />
@@ -893,7 +893,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="是否显示裁剪菜单栏"
+                    android:text="Show Bottom Crop Control"
                     android:textColor="@color/app_color_53575e"
                     android:textSize="14sp"
                     android:visibility="gone" />

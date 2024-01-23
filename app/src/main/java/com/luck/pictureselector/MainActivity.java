@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity implements IBridgePictureBeh
             cb_preview_full, cb_preview_scale, cb_inject_layout, cb_time_axis, cb_WithImageVideo,
             cb_system_album, cb_fast_select, cb_skip_not_gif, cb_not_gif, cb_attach_camera_mode,
             cb_attach_system_mode, cb_camera_zoom, cb_camera_focus, cb_query_sort_order, cb_watermark,
-            cb_custom_preview, cb_permission_desc,cb_video_thumbnails, cb_auto_video, cb_selected_anim,
+            cb_custom_preview, cb_permission_desc, cb_video_thumbnails, cb_auto_video, cb_selected_anim,
             cb_video_resume, cb_custom_loading;
     private int chooseMode = SelectMimeType.ofAll();
     private boolean isHasLiftDelete;
@@ -308,6 +308,10 @@ public class MainActivity extends AppCompatActivity implements IBridgePictureBeh
         // 注册需要写在onCreate或Fragment onAttach里，否则会报java.lang.IllegalStateException异常
         launcherResult = createActivityResultLauncher();
 
+        cb_crop.setChecked(true);
+        cb_compress.setChecked(true);
+        cb_hide.setChecked(true);
+        cb_preview_img.setChecked(false);
 //        List<LocalMedia> list = new ArrayList<>();
 //        list.add(LocalMedia.generateHttpAsLocalMedia("https://gossv.cfp.cn/videos/mts_videos/medium/temp/VCG42483198574.mp4"));
 //        list.add(LocalMedia.generateHttpAsLocalMedia("https://wx1.sinaimg.cn/mw2000/0073ozWdly1h0afogn4vij30u05keb29.jpg"));
@@ -1269,7 +1273,6 @@ public class MainActivity extends AppCompatActivity implements IBridgePictureBeh
     }
 
 
-
     /**
      * 自定义预览
      *
@@ -1617,8 +1620,6 @@ public class MainActivity extends AppCompatActivity implements IBridgePictureBeh
             uCrop.start(fragment.requireActivity(), fragment, requestCode);
         }
     }
-
-
 
 
     /**

@@ -12,4 +12,7 @@
 
     <string name="ucrop_gif_tag">gif</string>
     <string name="ucrop_not_crop">not supported crop type</string>
+    <string name="ucrop_label_cancel_photo">Cancel</string>
+    <string name="ucrop_label_next_photo">Next</string>
+
 </resources>

@@ -8,7 +8,7 @@
             <solid android:color="@color/ucrop_color_widget_background" />
             <stroke
                 android:width="0.5dp"
-                android:color="@color/ucrop_color_divider_line" />
+                android:color="@color/ucrop_color_white" />
             <padding
                 android:left="0dp"
                 android:right="0dp" />

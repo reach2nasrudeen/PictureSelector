@@ -10,4 +10,7 @@
     <string name="ucrop_menu_crop">قطع</string>
     <string name="ucrop_gif_tag">الصور المتحركة</string>
     <string name="ucrop_not_crop">نوع القص غير معتمد</string>
+    <string name="ucrop_label_cancel_photo">Cancel</string>
+    <string name="ucrop_label_next_photo">Next</string>
+
 </resources>

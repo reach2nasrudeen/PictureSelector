@@ -6,4 +6,7 @@
     <string name="ucrop_label_original">Original</string>
     <string name="ucrop_menu_crop">Recortar</string>
     <string name="ucrop_not_crop">Kiểu cắt chưa sắp xếp</string>
+    <string name="ucrop_label_cancel_photo">Cancel</string>
+    <string name="ucrop_label_next_photo">Next</string>
+
 </resources>
