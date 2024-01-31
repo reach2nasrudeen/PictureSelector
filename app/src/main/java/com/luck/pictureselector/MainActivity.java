@@ -509,6 +509,7 @@ public class MainActivity extends AppCompatActivity implements IBridgePictureBeh
                                 .isDisplayTimeAxis(cb_time_axis.isChecked())
                                 .isOnlyObtainSandboxDir(cb_only_dir.isChecked())
                                 .isPageStrategy(cbPage.isChecked())
+                                .setImageSpanCount(3)
                                 .isOriginalControl(cb_original.isChecked())
                                 .isDisplayCamera(cb_isCamera.isChecked())
                                 .isOpenClickSound(cb_voice.isChecked())
@@ -2103,8 +2104,8 @@ public class MainActivity extends AppCompatActivity implements IBridgePictureBeh
                 selectMainStyle.setDarkStatusBarBlack(true);
                 selectMainStyle.setSelectNormalTextColor(ContextCompat.getColor(getContext(), R.color.ps_color_9b));
                 selectMainStyle.setSelectTextColor(ContextCompat.getColor(getContext(), R.color.ps_color_fa632d));
-                selectMainStyle.setPreviewSelectBackground(R.drawable.ps_demo_white_preview_selector);
-                selectMainStyle.setSelectBackground(R.drawable.ps_checkbox_selector);
+                selectMainStyle.setPreviewSelectBackground(R.drawable.ps_demo_white_preview);
+                selectMainStyle.setSelectBackground(R.drawable.ps_demo_white_preview);
                 selectMainStyle.setSelectText(R.string.ps_done_front_num);
                 selectMainStyle.setMainListBackgroundColor(ContextCompat.getColor(getContext(), R.color.ps_color_white));
 

@@ -11,6 +11,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.luck.picture.lib.R;
@@ -24,6 +25,7 @@ import com.luck.picture.lib.style.SelectMainStyle;
 import com.luck.picture.lib.utils.AnimUtils;
 import com.luck.picture.lib.utils.StyleUtils;
 import com.luck.picture.lib.utils.ValueOf;
+import com.luck.picture.lib.widget.SquareRelativeLayout;
 
 import java.util.List;
 
@@ -36,6 +38,7 @@ public class BaseRecyclerMediaHolder extends RecyclerView.ViewHolder {
     public ImageView ivPicture;
     public TextView tvCheck;
     public View btnCheck;
+    public SquareRelativeLayout layoutParent;
     public Context mContext;
     public SelectorConfig selectorConfig;
     public boolean isSelectNumberStyle;
@@ -71,6 +74,7 @@ public class BaseRecyclerMediaHolder extends RecyclerView.ViewHolder {
         isSelectNumberStyle = selectMainStyle.isSelectNumberStyle();
         ivPicture = itemView.findViewById(R.id.ivPicture);
         tvCheck = itemView.findViewById(R.id.tvCheck);
+        layoutParent = itemView.findViewById(R.id.layout_parent);
         btnCheck = itemView.findViewById(R.id.btnCheck);
         if (config.selectionMode == SelectModeConfig.SINGLE && config.isDirectReturnSingle) {
             tvCheck.setVisibility(View.GONE);
@@ -279,7 +283,13 @@ public class BaseRecyclerMediaHolder extends RecyclerView.ViewHolder {
         }
         if (selectorConfig.isDirectReturnSingle) {
             ivPicture.setColorFilter(defaultColorFilter);
+            layoutParent.setPadding(0, 0, 0, 0);
+            layoutParent.setBackgroundColor(ContextCompat.getColor(mContext, R.color.ps_color_20));
         } else {
+            int padding = isChecked ? 10 : 0;
+            int bgColor = isChecked ? R.color.ps_color_item_selected_background : R.color.ps_color_20;
+            layoutParent.setPadding(padding, padding, padding, padding);
+            layoutParent.setBackgroundColor(ContextCompat.getColor(mContext, bgColor));
             ivPicture.setColorFilter(isChecked ? selectColorFilter : defaultColorFilter);
         }
     }
